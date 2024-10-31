@@ -1,0 +1,62 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh; /* Assure que le body fait au moins la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+nav{
+    padding: 1rem;
+    border-bottom: 3px solid #242424;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.conteur{
+    font-size: 3rem;
+    font-weight: 500; /* Utilise simplement 400 sans unité */
+}
+.question{
+    font-size: 2rem;
+    border-bottom: 3px solid #242424;
+}
+
+.screen{
+    margin:14rem;
+}
+.block{
+    border:3px solid #242424;
+    border-radius: 7px;
+    padding:1rem
+}
+
+.bouton {
+    border: 3px solid #242424;
+    border-radius: 7px;
+    padding: 2rem;
+    margin:2rem;
+    text-align: center;
+    width: 300px;
+}
+.bouton1 {
+    border: 3px solid #242424;
+    border-radius: 7px;
+    padding: 1rem;
+    margin:1rem;
+    text-align: center;
+}
+
+.bouton1:hover {
+    background-color: #053913;
+}
+
+.bouton:hover {
+    background-color: #5d5d5d;
+}
+.bouton.active {
+    background-color: #454545; /* Couleur de fond lorsqu'un bouton est actif */
+    color: white; /* Couleur du texte pour plus de visibilité */
+}
+
