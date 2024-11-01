@@ -8,10 +8,58 @@ body {
     margin: 0; /* Supprime les marges par défaut */
 }
 
-nav{
+/* Style de la navigation */
+nav {
     padding: 1rem;
-    border-bottom: 3px solid #242424;
     font-family: 'Courier New', Courier, monospace;
+    border-bottom: 3px solid #242424; 
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox pour alignement */
+    align-items: center; /* Centre les items verticalement */
+}
+
+a {
+    color:#ffffff;
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.5rem 0; /* Ajuste la hauteur des <li> */
+    position: relative;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    padding: 10px;
+}
+
+nav li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #37FF8B;
+    transition: width 0.5s;
+    z-index: -1;
+    
+
+}
+
+nav li:hover::before {
+    width: 100%;
+    
+}
+
+nav li:hover {
+    color: white; /* Couleur du texte pendant le hover */
+    
 }
 
 .conteur{
@@ -60,3 +108,21 @@ nav{
     color: white; /* Couleur du texte pour plus de visibilité */
 }
 
+.image-fond{
+    width: 110%;
+}
+
+.titre{
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  border-left: white 8px solid;
+  padding-left: 10px;
+  margin: 0.67em 0;
+    
+}
+
+p{
+    font-size: large;
+    font-weight: 500;
+}
